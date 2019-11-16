@@ -1,0 +1,16 @@
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\bin\Debug\netcoreapp2.2\BankSystemAPI.deps.json
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\bin\Debug\netcoreapp2.2\BankSystemAPI.runtimeconfig.json
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\bin\Debug\netcoreapp2.2\BankSystemAPI.runtimeconfig.dev.json
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\bin\Debug\netcoreapp2.2\BankSystemAPI.dll
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\obj\Debug\netcoreapp2.2\BankSystemAPI.csprojAssemblyReference.cache
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\obj\Debug\netcoreapp2.2\BankSystemAPI.RazorAssemblyInfo.cache
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\obj\Debug\netcoreapp2.2\BankSystemAPI.RazorAssemblyInfo.cs
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\obj\Debug\netcoreapp2.2\BankSystemAPI.AssemblyInfoInputs.cache
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\obj\Debug\netcoreapp2.2\BankSystemAPI.AssemblyInfo.cs
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\obj\Debug\netcoreapp2.2\BankSystemAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\bin\Debug\netcoreapp2.2\BankSystemAPI.pdb
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\obj\Debug\netcoreapp2.2\BankSystemAPI.dll
+C:\Users\Nevena\Source\Repos\BankSystem\BankSystemAPI\BankSystemAPI\obj\Debug\netcoreapp2.2\BankSystemAPI.pdb
