@@ -1,0 +1,26 @@
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace BankSystemAPI.Models
+{
+    public class AuthenticationContext : IdentityDbContext
+    {
+        private static DbContextOptions options;
+
+        public AuthenticationContext(DbContextOptions optio
+            ) : base(options)
+        {
+
+
+        }
+        public DbSet<ApplicationUser> ApplicationUsers
+        {
+            get; set;
+
+        }
+    }
+}
