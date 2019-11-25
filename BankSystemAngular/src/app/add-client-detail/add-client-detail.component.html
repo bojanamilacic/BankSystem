@@ -1,0 +1,11 @@
+<form [formGroup]="addClientForm" (ngSubmit)="onSubmit()" class = "client-form">
+  <mat-card>
+    <mat-form-field class="first-name">
+      <input matInput placeholder="First Name" formControlName="FirstName" required>
+    </mat-form-field>
+    <mat-form-field class="last-name">
+        <input matInput placeholder="Last Name" formControlName="LastName" required>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" class = "add-client-btn">Add</button>
+  </mat-card>
+  </form>
