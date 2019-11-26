@@ -4,7 +4,7 @@ import { AddClientDetailComponent } from './add-client-detail/add-client-detail.
 
 
 const routes: Routes = [
-  {path: 'add-client-detail', component: AddClientDetailComponent}
+  {path: '', component: AddClientDetailComponent}
 ];
 
 @NgModule({

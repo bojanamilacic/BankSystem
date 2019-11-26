@@ -6,7 +6,7 @@ import { ClientDetail } from './client-detail.model';
   providedIn: 'root'
 })
 export class ConnectionApiService {
-  readonly rootURL = 'https://localhost:44373/api';
+  readonly rootURL = 'https://localhost:44309/api';
 
   constructor(private http: HttpClient) { }
 
