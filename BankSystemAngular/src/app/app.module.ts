@@ -9,10 +9,12 @@ import { AddClientDetailComponent } from './add-client-detail/add-client-detail.
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewClientDetailComponent } from './view-client-detail/view-client-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AddClientDetailComponent
+    AddClientDetailComponent,
+    ViewClientDetailComponent
   ],
   imports: [
     BrowserModule,
