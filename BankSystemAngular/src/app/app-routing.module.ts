@@ -2,10 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AddClientDetailComponent } from './add-client-detail/add-client-detail.component';
 import { ViewClientDetailComponent } from './view-client-detail/view-client-detail.component';
+import { LoginComponent } from './login/login.component';
+import { UserRegistrationComponent } from './user-registration/user-registration.component';
 
 
 const routes: Routes = [
-  {path: '', component: ViewClientDetailComponent}
+  {path: 'view-client-detail', component: ViewClientDetailComponent},
+  {path: 'add', component: AddClientDetailComponent},
+  {path: '', component: LoginComponent},
+  {path: 'user-registration', component: UserRegistrationComponent},
 ];
 
 @NgModule({

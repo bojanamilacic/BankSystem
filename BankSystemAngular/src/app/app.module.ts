@@ -10,11 +10,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewClientDetailComponent } from './view-client-detail/view-client-detail.component';
+import { LoginComponent } from './login/login.component';
+import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
     AddClientDetailComponent,
-    ViewClientDetailComponent
+    ViewClientDetailComponent,
+    LoginComponent,
+    UserRegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,8 @@ import { ViewClientDetailComponent } from './view-client-detail/view-client-deta
     ReactiveFormsModule,
     MatDatepickerModule,
     MatBadgeModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    ToastrModule.forRoot()
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent]

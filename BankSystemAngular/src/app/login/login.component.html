@@ -1,0 +1,14 @@
+<form #form='ngForm'  (ngSubmit)="onSubmit(form)">
+  <mat-card class = "logincard">
+    <mat-form-field class = "logindetail">
+      <mat-label>Username</mat-label>
+      <input matInput type = "text" #UserName="ngModel" name="Username" [(ngModel)]="formModel.Username" required>
+    </mat-form-field>
+    <mat-form-field class = "logindetail">
+        <mat-label>Password</mat-label>
+        <input matInput type = "text" #Password="ngModel" name="Password" [(ngModel)]="formModel.Password" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Login</button>
+  </mat-card>
+  </form>
+

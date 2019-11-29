@@ -1,0 +1,29 @@
+<form [formGroup]="service.formModel" (submit)="onSubmit()"  autocomplete="off">
+  <mat-card>
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input matInput required type="text" formControlName="UserName">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput required type="text" formControlName="Email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>FullName</mat-label>
+      <input matInput required type="text" formControlName="FullName">
+    </mat-form-field>
+    <div formGroupName="Passwords">
+
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matInput required type="text" formControlName="Password">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Confirm Password</mat-label>
+      <input matInput required type="text" formControlName="ConfirmPassword">
+    </mat-form-field>
+    </div>
+  </mat-card>
+  <button mat-raised-button color="primary" type="submit" [disabled]="!service.formModel.valid">Sign Up</button>
+</form>
+

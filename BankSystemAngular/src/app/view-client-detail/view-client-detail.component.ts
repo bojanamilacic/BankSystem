@@ -8,7 +8,7 @@ import { ConnectionApiService } from '../api/connection-api.service';
 })
 export class ViewClientDetailComponent implements OnInit {
 
-  constructor(private service: ConnectionApiService) { }
+  constructor(public service: ConnectionApiService) { }
 
   ngOnInit() {
     this.service.refreshList();
