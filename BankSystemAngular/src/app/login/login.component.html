@@ -1,14 +1,20 @@
-<form #form='ngForm'  (ngSubmit)="onSubmit(form)">
-  <mat-card class = "logincard">
-    <mat-form-field class = "logindetail">
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+<mat-card class = "login-card">
+  <mat-card-header class = "login-title-header">
+  <mat-card-title class = "login-title">Log In</mat-card-title>
+</mat-card-header>
+  <mat-card-content  class = "login-detail">
+<form #form='ngForm' (ngSubmit)="onSubmit(form)">
+    <mat-form-field class = "login">
       <mat-label>Username</mat-label>
       <input matInput type = "text" #UserName="ngModel" name="Username" [(ngModel)]="formModel.Username" required>
     </mat-form-field>
-    <mat-form-field class = "logindetail">
+    <mat-form-field  class = "login">
         <mat-label>Password</mat-label>
         <input matInput type = "text" #Password="ngModel" name="Password" [(ngModel)]="formModel.Password" required>
     </mat-form-field>
-    <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Login</button>
-  </mat-card>
+    <button mat-stroked-button color="accent" type="submit" [disabled]="form.invalid" class = "login-button">Login</button>
   </form>
-
+</mat-card-content>
+</mat-card>
+</div>

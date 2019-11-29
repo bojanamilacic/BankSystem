@@ -13,13 +13,14 @@ import { ViewClientDetailComponent } from './view-client-detail/view-client-deta
 import { LoginComponent } from './login/login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { ToastrModule } from 'ngx-toastr';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
     AddClientDetailComponent,
     ViewClientDetailComponent,
     LoginComponent,
-    UserRegistrationComponent
+    UserRegistrationComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +37,8 @@ import { ToastrModule } from 'ngx-toastr';
     MatDatepickerModule,
     MatBadgeModule,
     MatNativeDateModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    FlexLayoutModule
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent]

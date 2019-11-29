@@ -1,29 +1,35 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+<mat-card class = "registration-card">
+    <mat-card-header class = "registration-title-header">
+        <mat-card-title class = "registration-title">Create new user</mat-card-title>
+      </mat-card-header>
+      <mat-card-content  class = "registration-detail">
 <form [formGroup]="service.formModel" (submit)="onSubmit()"  autocomplete="off">
-  <mat-card>
-    <mat-form-field>
+    <mat-form-field class = "registration">
       <mat-label>Username</mat-label>
       <input matInput required type="text" formControlName="UserName">
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field class = "registration">
       <mat-label>Email</mat-label>
       <input matInput required type="text" formControlName="Email">
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field class = "registration">
       <mat-label>FullName</mat-label>
       <input matInput required type="text" formControlName="FullName">
     </mat-form-field>
     <div formGroupName="Passwords">
 
-    <mat-form-field>
+    <mat-form-field class = "registration">
       <mat-label>Password</mat-label>
       <input matInput required type="text" formControlName="Password">
     </mat-form-field>
-    <mat-form-field>
+    <mat-form-field class = "registration">
       <mat-label>Confirm Password</mat-label>
       <input matInput required type="text" formControlName="ConfirmPassword">
     </mat-form-field>
     </div>
-  </mat-card>
-  <button mat-raised-button color="primary" type="submit" [disabled]="!service.formModel.valid">Sign Up</button>
+<button mat-stroked-button color="accent" type="submit" class = "registration-button" [disabled]="!service.formModel.valid">Sign Up</button>
 </form>
-
+</mat-card-content>
+</mat-card>
+</div>

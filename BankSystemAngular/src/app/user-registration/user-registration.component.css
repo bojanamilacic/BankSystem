@@ -1,0 +1,35 @@
+.registration-card{
+  position:relative;
+  opacity:1;
+  float:left;
+  padding:60px 50px 40px 50px;
+  width:100%;
+  background:#fff;
+  border-radius:10px;
+  transform:scale(1);
+  -webkit-transform:scale(1);
+  -ms-transform:scale(1);
+  z-index:5;
+  max-width:330px;
+  margin: 15% auto auto auto;
+}
+.registration-detail{
+  width: 100%;
+}
+.registration{
+  width: 100%;
+}
+.registration-title-header{
+  text-align:center;
+  width:100%;
+  display:block;
+  font-weight:700;
+}
+
+.registration-button{
+  width: 100%;
+  float:center;
+  border:1px solid currentColor;
+  background:#FFF7FA;
+  line-height:54px;
+}
