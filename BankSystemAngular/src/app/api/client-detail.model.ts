@@ -6,4 +6,5 @@ export class ClientDetail {
   public Email: string;
   public Address: string;
   public PhoneNumber: string;
+  public CurrentDateTime: Date;
 }

@@ -4,10 +4,11 @@ import { AddClientDetailComponent } from './add-client-detail/add-client-detail.
 import { ViewClientDetailComponent } from './view-client-detail/view-client-detail.component';
 import { LoginComponent } from './login/login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import { AuthGuard } from './auth/auth.guard';
 
 
 const routes: Routes = [
-  {path: 'view-client-detail', component: ViewClientDetailComponent},
+  {path: 'view-client-detail', component: ViewClientDetailComponent,canActivate:[AuthGuard]},
   {path: 'add', component: AddClientDetailComponent},
   {path: '', component: LoginComponent},
   {path: 'user-registration', component: UserRegistrationComponent},

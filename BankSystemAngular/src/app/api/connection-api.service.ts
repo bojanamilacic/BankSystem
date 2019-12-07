@@ -6,16 +6,18 @@ import { ClientDetail } from './client-detail.model';
   providedIn: 'root'
 })
 export class ConnectionApiService {
+  fromDataClient: ClientDetail;
   readonly rootURL = 'https://localhost:44309/api';
-list : ClientDetail[];
+  list: ClientDetail[];
   constructor(private http: HttpClient) { }
 
-  postClientDetail(fromDataClient: ClientDetail) {
+  postClientDetail(fromDataClient) {
     return this.http.post(this.rootURL + '/ClientDetails', fromDataClient);
 
   }
-  refreshList(){
-    this.http.get(this.rootURL + '/ClientDetails').toPromise().then(res => this.list = res as ClientDetail[]);
+  refreshList() {
+    this.http.get(this.rootURL + '/ClientDetails').toPromise().then(res =>
+      this.list = res as ClientDetail[]);
   }
-  //get iz baze komponenta napraviti prikaz html (engufor) napraviti nesta u typescrpt pozvati //
+
 }

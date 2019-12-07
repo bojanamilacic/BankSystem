@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { AddClientDetailComponent } from './add-client-detail/add-client-detail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ViewClientDetailComponent } from './view-client-detail/view-client-detail.component';
 import { LoginComponent } from './login/login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { ToastrModule } from 'ngx-toastr';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ConnectionApiService } from './api/connection-api.service';
+import { AuthInterceptor } from './auth/auth.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ToastrModule.forRoot(),
     FlexLayoutModule
   ],
-  providers: [MatDatepickerModule],
+  providers: [MatDatepickerModule, ConnectionApiService, {
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true
+  } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

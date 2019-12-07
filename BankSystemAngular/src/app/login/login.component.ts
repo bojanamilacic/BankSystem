@@ -17,7 +17,9 @@ export class LoginComponent implements OnInit {
   constructor(public service: LogInAuthenticationService, private router: Router, private toastr: ToastrService) { }
 
   ngOnInit() {
-
+   if (localStorage.getItem('token') != null) {
+    this.router.navigateByUrl('/view-client-detail');
+   }
 }
   onSubmit(logInform: NgForm) {
     this.service.login(logInform.value).subscribe(
@@ -26,10 +28,12 @@ export class LoginComponent implements OnInit {
         this.router.navigateByUrl('/view-client-detail');
       },
       err => {
-         if (err.status == 400)
+         if (err.status == 400) {
           this.toastr.error('Incorrect username or password.', 'Authentication failed.');
-        else
+         }
+        else {
         this.toastr.error('Authentication failed.');
+         }
       }
     );
   }

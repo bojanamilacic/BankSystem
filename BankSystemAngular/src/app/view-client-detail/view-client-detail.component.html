@@ -1,13 +1,13 @@
 <table>
-    <tr *ngFor="let cd of service.list">
-     <td>{{cd.FirstName}} </td>
-     <td>{{cd.LastName}} </td>
-     <td>{{cd.JMBG}} </td>
-     <td>{{cd.BirthDate}} </td>
-     <td>{{cd.Email}} </td>
-     <td>{{cd.Address}} </td>
-     <td>{{cd.PhoneNumber}} </td>
-     </tr>
-
-
-    </table>
+  <tr *ngFor="let cd of service.list">
+   <td>{{cd.FirstName}} </td>
+   <td>{{cd.LastName}} </td>
+   <td>{{cd.JMBG}} </td>
+   <td>{{cd.BirthDate}} </td>
+   <td>{{cd.Email}} </td>
+   <td>{{cd.Address}} </td>
+   <td>{{cd.PhoneNumber}} </td>
+   </tr>
+</table>
+<button mat-stroked-button type="submit" class = "logout-button" (click) = "onLogout()">Logout</button>
+<button mat-stroked-button  (click)="addNewClientDialog()" class="add-new-client-btn">Add new client</button>

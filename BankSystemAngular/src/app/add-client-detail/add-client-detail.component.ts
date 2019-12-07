@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl, FormGroupDirective, NgForm } from '@angular/forms';
 import { ConnectionApiService } from '../api/connection-api.service';
-import { ErrorStateMatcher } from '@angular/material';
 
 @Component({
   selector: 'app-add-client-detail',
@@ -16,6 +15,7 @@ export class AddClientDetailComponent implements OnInit {
   constructor( private formBuilder: FormBuilder, public service: ConnectionApiService) { }
 
   ngOnInit() {
+    this.service.refreshList();
     this.addClientForm = this.formBuilder.group({
       FirstName: ['', Validators.required],
       LastName: ['', Validators.required],
